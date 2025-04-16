@@ -1,0 +1,19 @@
+name: Melon Ticket Notifier
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # 每10分钟检查一次（你也可以改）
+  workflow_dispatch:  # 手动启动也可以
+
+jobs:
+  check-ticket:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check ticket
+        uses: GDMINUUU/melon-ticket-actions@main
+        with:
+          product-id: '211217'
+          schedule-id: '填写你要的scheduleId'
+          seat-id: '填写你要的seatId'
+          slack-incoming-webhook-url: '填写你的slack webhook'
+          message: '门票开了！！！快冲！！！'
