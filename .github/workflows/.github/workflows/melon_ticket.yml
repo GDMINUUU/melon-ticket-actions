@@ -13,7 +13,7 @@ jobs:
         uses: GDMINUUU/melon-ticket-actions@main
         with:
           product-id: '211217'
-          schedule-id: '填写你要的scheduleId'
-          seat-id: '填写你要的seatId'
+          schedule-id: '100002
+          seat-id: '310 309 308 313'
           slack-incoming-webhook-url: '填写你的slack webhook'
           message: '门票开了！！！快冲！！！'
